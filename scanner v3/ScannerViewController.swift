@@ -49,10 +49,10 @@ class ScannerViewController: UIViewController {
     
     private let captureButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = Config.secondaryColor
+        button.backgroundColor = .red
         button.layer.cornerRadius = 35
         button.layer.borderWidth = 5
-        button.layer.borderColor = Config.secondaryColor.withAlphaComponent(0.2).cgColor
+        button.layer.borderColor = UIColor.red.withAlphaComponent(0.2).cgColor
         button.addTarget(nil, action: #selector(captureButtonTapped), for: .touchUpInside)
         return button
     }()
